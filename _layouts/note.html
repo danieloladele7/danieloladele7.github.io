@@ -1,13 +1,12 @@
 ---
 layout: page
-# The Category layout
 ---
 
 {% include lang.html %}
 
-<div id="page-category">
+<div id="page-note">
   <h1 class="ps-lg-2">
-    <i class="far fa-folder-open fa-fw text-muted"></i>
+    <i class="far fa-sticky-note fa-fw text-muted"></i>
     {{ page.title }}
     <span class="lead text-muted ps-2">{{ page.posts | size }}</span>
   </h1>
@@ -22,3 +21,5 @@ layout: page
     {% endfor %}
   </ul>
 </div>
+
+<a href="{{ '/notes/' | relative_url }}">Notes</a>
